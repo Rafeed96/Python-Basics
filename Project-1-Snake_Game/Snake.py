@@ -124,7 +124,7 @@ yellow = (255, 255, 102)
 display_Width = 720
 display_Height = 720
 
-dis = pygame.display.set_mode(display_Width, display_Height)
+dis = pygame.display.set_mode([display_Width, display_Height])
 pygame.display.set_caption("Snakes in Python")
 
 clock = pygame.time.Clock()
