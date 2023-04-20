@@ -89,10 +89,28 @@ def gameLoop():
                 del snake_List[0]
 
             for x in snake_List[:-1]:
-                if x== snake_Head:
+                if x == snake_Head:
                     game_close = True
 
+            our_snake(snake_block, snake_List)
+            Your_Score(Length_of_snake - 1)
 
+            pygame.display.update()
+
+            if x1 == foodx and y1 == foody:
+                foodx = round(random.randrange(
+                    0, display_Width-snake_block)/10.0)*10.0
+
+                foody = round(random.randrange(
+                    0, display_Height-snake_block)/10.0)*10.0
+
+                Length_of_snake += 1
+
+            clock.tick(snake_speed)
+
+        pygame.quit()
+        quit()
+    gameLoop()
 
 
 white = (255, 255, 255)
