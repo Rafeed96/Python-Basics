@@ -52,7 +52,7 @@ def gameLoop():
                         game_close = False
                     if event.key == pygame.K_c:
                         gameLoop()
-            
+
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     game_over = True
@@ -60,6 +60,29 @@ def gameLoop():
                     if event.key == pygame.K_LEFT:
                         x1_change = -snake_block
                         y1_change = 0
+                    elif event.key == pygame.K_RIGHT:
+                        x1_change = snake_block
+                        y1_change = 0
+                    elif event.key == pygame.K_UP:
+                        y1_change = -snake_block
+                        x1_change = 0
+                    elif event.key == pygame.K_DOWN:
+                        y1_change = snake_block
+                        x1_change = 0
+
+            if x1 >= display_Width or x1 < 0 or y1 >= display_Height or y1 < 0:
+                game_close = True
+            x1 += x1_change
+            y1 += y1_change
+
+            dis.fill(blue)
+
+            pygame.draw.rect(
+                dis, green, [foodx, foody, snake_block, snake_block])
+            snake_Head = []
+            snake_Head.append(x1)
+            snake_Head.append(y1)
+
 
 
 white = (255, 255, 255)
