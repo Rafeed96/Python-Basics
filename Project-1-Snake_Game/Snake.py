@@ -10,6 +10,29 @@ def Your_Score(score):
     dis.blit(value, [0, 0])
 
 
+def our_snake(snake_block, snake_list):
+    for x in snake_list:
+        pygame.draw.rect(dis, black, [x[0], x[1], snake_block, snake_block])
+
+
+def message(msg, color):
+    mesge = font_style.render(msg, True, color)
+    dis.blit(mesge, [display_Width/6, display_Height/3])
+
+
+def gameLoop():
+    game_over = False
+    game_close = False
+
+    x1 = display_Width/2
+    y1 = display_Height/2
+
+    x1_change = 0
+    y1_change = 0
+
+    
+
+
 white = (255, 255, 255)
 black = (0, 0, 0)
 red = (213, 50, 80)
