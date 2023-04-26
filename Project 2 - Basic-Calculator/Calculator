@@ -74,17 +74,17 @@ while (exit != 0):
 
     choice = input("Please choose an option: ")
 
-    if choice == 'A':
+    if choice == 'A' or choice == 'a':
         add()
-    elif choice == 'B':
+    elif choice == 'B' or choice == 'b':
         sub()
-    elif choice == 'C':
+    elif choice == 'C' or choice == 'c':
         mul()
-    elif choice == 'D':
+    elif choice == 'D' or choice == 'd':
         div()
-    elif choice == 'E':
+    elif choice == 'E' or choice == 'e':
         rem()
-    elif choice == 'F':
+    elif choice == 'F' or choice == 'f':
         per()
     else:
         exit = 0
