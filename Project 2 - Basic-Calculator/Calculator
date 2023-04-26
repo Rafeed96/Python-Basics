@@ -1,0 +1,20 @@
+# Basic Calculator functions
+# Add, Sub, Mul, Div, Remainder, Percentage
+# Print options for the user
+# Show results
+# While Loop menu system to continueously run the calculator until user exits
+
+
+def showMenu():
+    print("Please select and option for calculation")
+    print("Press A for Addition")
+    print("Press b for Subtraction")
+    print("Press C for Multiplication")
+    print("Press D for Division")
+    print("Press E for Remainder")
+    print("Press F for Percentage")
+
+
+def add():
+    print("Please enter the 1st number for Addition")
+
