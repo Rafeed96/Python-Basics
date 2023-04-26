@@ -31,3 +31,21 @@ def sub():
     b = float(input())
     result = a-b
     print("The result is : " + str(result))
+
+
+def mul():
+    print("Please enter the 1st number for Multiplication")
+    a = float(input())
+    print("Please enter the 2nd number for Multiplication")
+    b = float(input())
+    result = a*b
+    print("The result is : " + str(result))
+
+
+def div():
+    print("Please enter the 1st number for Division")
+    a = float(input())
+    print("Please enter the 2nd number for Division")
+    b = float(input())
+    result = a/b
+    print("The result is : " + str(result))
