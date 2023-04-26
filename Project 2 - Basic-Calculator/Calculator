@@ -17,10 +17,17 @@ def showMenu():
 
 def add():
     print("Please enter the 1st number for Addition")
-    a = int(input())
+    a = float(input())
     print("Please enter the 2nd number for Addition")
-    b = int(input())
+    b = float(input())
     result = a+b
-    print("The result is : "+ str(result)) 
+    print("The result is : " + str(result))
 
 
+def sub():
+    print("Please enter the 1st number for Subtraction")
+    a = float(input())
+    print("Please enter the 2nd number for Subtraction")
+    b = float(input())
+    result = a-b
+    print("The result is : " + str(result))
