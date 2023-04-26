@@ -49,3 +49,24 @@ def div():
     b = float(input())
     result = a/b
     print("The result is : " + str(result))
+
+
+def rem():
+    print("Please enter the 1st number for Remainder")
+    a = float(input())
+    print("Please enter the 2nd number for Remainder")
+    b = float(input())
+    result = a % b
+    print("The result is : " + str(result))
+
+
+def per():
+    print("Please enter the 1st number for Percentage")
+    a = float(input())
+    print("Please enter the 2nd number for Percentage")
+    b = float(input())
+    result = (b/a)*100
+    print("The result is : " + str(result))
+
+
+
