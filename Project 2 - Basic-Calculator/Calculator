@@ -17,4 +17,11 @@ def showMenu():
 
 def add():
     print("Please enter the 1st number for Addition")
+    a = int(input("The 1st number: "))
+    print("Please enter the 2nd number for Addition")
+    b = input()
+    result = int(a)+int(b)
+    print("The result is : "+ str(result)) 
 
+
+add()
