@@ -69,8 +69,7 @@ def per():
     print("The result is : " + str(result))
 
 
-
-while(exit != 0):
+while (exit != 0):
     showMenu()
 
     choice = input("Please choose an option: ")
@@ -80,13 +79,12 @@ while(exit != 0):
     elif choice == 'B':
         sub()
     elif choice == 'C':
-        sub()
+        mul()
     elif choice == 'D':
-        sub()
+        div()
     elif choice == 'E':
-        sub()
+        rem()
     elif choice == 'F':
-        sub()
+        per()
     else:
         exit = 0
-
