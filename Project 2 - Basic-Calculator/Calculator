@@ -70,3 +70,23 @@ def per():
 
 
 
+while(exit != 0):
+    showMenu()
+
+    choice = input("Please choose an option: ")
+
+    if choice == 'A':
+        add()
+    elif choice == 'B':
+        sub()
+    elif choice == 'C':
+        sub()
+    elif choice == 'D':
+        sub()
+    elif choice == 'E':
+        sub()
+    elif choice == 'F':
+        sub()
+    else:
+        exit = 0
+
