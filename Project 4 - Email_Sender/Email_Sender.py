@@ -4,10 +4,10 @@ from app2 import password
 import ssl
 import smtplib
 
-email_sender = "ribrahim173095@bscse.uiu.ac.bd"
+email_sender = "raicobd@gmail.com"
 email_password = password
 
-email_receiver = ""
+email_receiver = "gexobag610@jobbrett.com"
 
 subject = "Trial of email sender"
 body = "Lets see if this works or not "
