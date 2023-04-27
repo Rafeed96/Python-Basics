@@ -2,6 +2,7 @@
 # function to collect text and perform conversion to QR code
 # save the QR as an image
 # run the function
+# install packages
 
 
 import qrcode
