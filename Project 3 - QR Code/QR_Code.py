@@ -3,6 +3,7 @@
 # save the QR as an image
 # run the function
 
+
 import qrcode
 
 
@@ -10,7 +11,7 @@ def generate_qecode(text):
 
     qr = qrcode.QRCode(
         version=1,
-        error_correction=qrcode.constants.ERROT_CORRECT_L,
+        error_correction=qrcode.constants.ERROR_CORRECT_L,
         box_size=10,
         border=4,
 
