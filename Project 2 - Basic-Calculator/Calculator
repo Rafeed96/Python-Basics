@@ -8,7 +8,7 @@
 def showMenu():
     print("Please select and option for calculation")
     print("Press A for Addition")
-    print("Press b for Subtraction")
+    print("Press B for Subtraction")
     print("Press C for Multiplication")
     print("Press D for Division")
     print("Press E for Remainder")
