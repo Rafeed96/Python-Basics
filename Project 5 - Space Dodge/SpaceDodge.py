@@ -12,11 +12,12 @@ BG = pygame.transform.scale(pygame.image.load("SBG.jpg"), (WIDTH, HEIGHT))
 
 FONT = pygame.font.SysFont("comicsans", 30)
 
+
 def draw(player, elapsed_time):
     WIN.blit(BG, (0, 0))
 
     time_text = FONT.render(f"Time: {round(elapsed_time)}s", 1, "white")
-    WIN.blit(time_text, (10,10))
+    WIN.blit(time_text, (10, 10))
 
     pygame.draw.rect(WIN, "white", player)
     pygame.display.update()
@@ -27,11 +28,14 @@ PLAYER_HEIGHT = 60
 PLAYER_VELOCITY = 5
 STAR_WIDTH = 10
 STAR_HEIGHT = 20
+STAR_VELOCITY = 5
+
 
 def main():
     run = True
 
-    player = pygame.Rect(200, HEIGHT-PLAYER_HEIGHT, PLAYER_WIDTH, PLAYER_HEIGHT)
+    player = pygame.Rect(200, HEIGHT-PLAYER_HEIGHT,
+                         PLAYER_WIDTH, PLAYER_HEIGHT)
 
     clock = pygame.time.Clock()
 
@@ -42,6 +46,7 @@ def main():
     star_count = 0
 
     stars = []
+    hit = False
 
     while run:
         star_count += clock.tick(60)
@@ -52,12 +57,12 @@ def main():
         if star_count > star_add_increment:
             for _ in range(3):
                 star_x = random.randint(0, WIDTH - STAR_WIDTH)
-                star = pygame.rect(star_x, -STAR_HEIGHT, STAR_WIDTH, STAR_HEIGHT)
+                star = pygame.rect(star_x, -STAR_HEIGHT,
+                                   STAR_WIDTH, STAR_HEIGHT)
                 stars.append(star)
 
-            star_add_increment = max(200, star_add_increment-50)
-            star_count=0
-
+            star_add_increment = max(200, star_add_increment - 50)
+            star_count = 0
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -66,13 +71,19 @@ def main():
 
         keys = pygame.key.get_pressed()
 
-        if keys[pygame.K_LEFT] and player.x - PLAYER_VELOCITY >=0:
+        if keys[pygame.K_LEFT] and player.x - PLAYER_VELOCITY >= 0:
             player.x -= PLAYER_VELOCITY
         if keys[pygame.K_RIGHT] and player.x + PLAYER_VELOCITY + player.width <= WIDTH:
             player.x += PLAYER_VELOCITY
 
         for star in stars[:]:
-            
+            star.y += STAR_VELOCITY
+            if star.y > HEIGHT:
+                stars.remove(star)
+            elif star.y + star.height >= player.y and star.colliderect(player):
+                stars.remove(star)
+                hit = True
+                break
 
         draw(player, elapsed_time)
 
