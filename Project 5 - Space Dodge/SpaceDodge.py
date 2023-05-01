@@ -12,14 +12,17 @@ BG = pygame.transform.scale(pygame.image.load("SBG.jpg"), (WIDTH, HEIGHT))
 
 FONT = pygame.font.SysFont("comicsans", 30)
 
-
-def draw(player, elapsed_time):
+def draw(player, elapsed_time, stars):
     WIN.blit(BG, (0, 0))
 
     time_text = FONT.render(f"Time: {round(elapsed_time)}s", 1, "white")
-    WIN.blit(time_text, (10, 10))
+    WIN.blit(time_text, (10,10))
 
     pygame.draw.rect(WIN, "white", player)
+
+    for star in stars:
+        pygame.draw.rect(WIN,"red", star)
+
     pygame.display.update()
 
 
@@ -30,12 +33,10 @@ STAR_WIDTH = 10
 STAR_HEIGHT = 20
 STAR_VELOCITY = 5
 
-
 def main():
     run = True
 
-    player = pygame.Rect(200, HEIGHT-PLAYER_HEIGHT,
-                         PLAYER_WIDTH, PLAYER_HEIGHT)
+    player = pygame.Rect(200, HEIGHT-PLAYER_HEIGHT, PLAYER_WIDTH, PLAYER_HEIGHT)
 
     clock = pygame.time.Clock()
 
@@ -50,19 +51,19 @@ def main():
 
     while run:
         star_count += clock.tick(60)
-        # clock.tick(60)
+        clock.tick(60)
 
         elapsed_time = time.time() - start_time
 
         if star_count > star_add_increment:
             for _ in range(3):
                 star_x = random.randint(0, WIDTH - STAR_WIDTH)
-                star = pygame.rect(star_x, -STAR_HEIGHT,
-                                   STAR_WIDTH, STAR_HEIGHT)
+                star = pygame.Rect(star_x, -STAR_HEIGHT, STAR_WIDTH, STAR_HEIGHT)
                 stars.append(star)
 
             star_add_increment = max(200, star_add_increment - 50)
-            star_count = 0
+            star_count=0
+
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -71,7 +72,7 @@ def main():
 
         keys = pygame.key.get_pressed()
 
-        if keys[pygame.K_LEFT] and player.x - PLAYER_VELOCITY >= 0:
+        if keys[pygame.K_LEFT] and player.x - PLAYER_VELOCITY >=0:
             player.x -= PLAYER_VELOCITY
         if keys[pygame.K_RIGHT] and player.x + PLAYER_VELOCITY + player.width <= WIDTH:
             player.x += PLAYER_VELOCITY
@@ -85,7 +86,14 @@ def main():
                 hit = True
                 break
 
-        draw(player, elapsed_time)
+
+        if hit:
+            lost_text = FONT.render("You Lost", 1, "White")
+            WIN.blit(lost_text, (WIDTH/2 - lost_text.get_width()/2, HEIGHT/2 - lost_text.get_height()/2))
+            pygame.display.update()
+            pygame.time.delay(4000)
+            break
+        draw(player, elapsed_time, stars)
 
     pygame.quit()
 
