@@ -64,10 +64,11 @@ def message_box(subject, content):
 
 
 def main():
+    global width, rows
     width = 500
-    height = 500
+
     rows = 20
-    win = pygame.display.set_mode((width,height))
+    win = pygame.display.set_mode((width,width))
     s = snake((255,0,0), (10,10))
     flag = True
 
