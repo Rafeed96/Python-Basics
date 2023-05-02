@@ -43,11 +43,12 @@ class snake(object):
 
 
 def drawGrid(w, rows, surface):
-    
+
     pass
 
 
 def redrawWindow(surface):
+    global rows, width
     win.fill((0, 0, 0))
     drawGrid(surface)
     pygame.display.update()
