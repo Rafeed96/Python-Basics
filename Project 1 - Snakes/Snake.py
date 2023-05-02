@@ -43,10 +43,14 @@ class snake(object):
 
 
 def drawGrid(w, rows, surface):
+    
     pass
 
 
 def redrawWindow(surface):
+    win.fill((0, 0, 0))
+    drawGrid(surface)
+    pygame.display.update()
     pass
 
 
@@ -71,11 +75,9 @@ def main():
     while flag:
         pygame.time.delay(60)
         clock.tick(10)
+
+        redrawWindow(win)
     pass
 
-
-
-cube.rows = rows
-cube.w = w
 
 main()
