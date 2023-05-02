@@ -52,7 +52,6 @@ def redrawWindow(surface):
     win.fill((0, 0, 0))
     drawGrid(surface)
     pygame.display.update()
-    pass
 
 
 def randomSnack(rows, items):
@@ -66,7 +65,6 @@ def message_box(subject, content):
 def main():
     global width, rows
     width = 500
-
     rows = 20
     win = pygame.display.set_mode((width,width))
     s = snake((255,0,0), (10,10))
@@ -77,7 +75,6 @@ def main():
     while flag:
         pygame.time.delay(60)
         clock.tick(10)
-
         redrawWindow(win)
     pass
 
