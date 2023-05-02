@@ -60,3 +60,13 @@ def message_box(subject, content):
 
 def main():
     pass
+
+
+rows = 52
+w = 720
+h = 480
+
+cube.rows = rows
+cube.w = w
+
+main()
