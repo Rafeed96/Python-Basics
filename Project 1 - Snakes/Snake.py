@@ -66,6 +66,8 @@ class snake(object):
             if p in self.turns:
                 turn = self.turns[p]
                 c.move(turn[0] , turn[1])
+                if i == len(self.body)-1:
+                    self.turn.pop(p)
 
     def reset(self, pos):
         pass
