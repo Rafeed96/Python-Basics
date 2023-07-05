@@ -14,10 +14,12 @@ def main_screen():
     image_icon = PhotoImage(file="ico.img")
     screen.iconphoto(False, image_icon)
 
-    Label(text="Enter text for encryption and decryption", fg="black", font=("calibri",13))
+    Label(text="Enter text for encryption and decryption", fg="black", font=("calibri",13)).place(x=10,y=10)
 
     screen.title("PctApp")
 
     screen.mainloop()
+
+main_screen()
 
 
