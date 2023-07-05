@@ -17,8 +17,10 @@ lbl.pack(side=tk.LEFT, padx=5)
 text=Entry(obj,textvariable=textv, font=30, width=25, bd=5)
 text.pack(side=tk.LEFT,padx=10)
 
+btn=Button(obj,text="Speak",font=20,bg="black",fg="white")
+btn.pack(side=tk.LEFT,padx=10)
 
 root.title("Text To Speech")
-root.geometry("400x200")
+root.geometry("500x200")
 root.resizable(False,False)
 root.mainloop()
