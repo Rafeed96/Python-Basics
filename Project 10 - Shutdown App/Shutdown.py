@@ -6,7 +6,7 @@ root.title("Shutdown App")
 root.geometry("400x580")
 
 # Restart Button
-restart_time_button = PhotoImage(file="E:\Projects\Repositories\Python\Python-Basics\Project 10 - Shutdown App\redo-refresh-restart.jpg")
+restart_time_button = PhotoImage(file="E:\Projects\Repositories\Python\Python-Basics\Project 10 - Shutdown App\restart.jpg")
 first_botton = Button(root, image=restart_time_button, borderwidth=0, cursor="hand2")
 first_botton.place(x=10, y=10)
 
@@ -26,6 +26,10 @@ fourth_botton = Button(root, image=shutdown_button, borderwidth=0, cursor="hand2
 fourth_botton.place(x=200, y=200)
 
 
+# Logout Button
+logout_button = PhotoImage(file="E:\Projects\Repositories\Python\Python-Basics\Project 10 - Shutdown App\logout-mini-icon.jpg")
+fifth_botton = Button(root, image=logout_button, borderwidth=0, cursor="hand2")
+fifth_botton.place(x=10, y=400)
 
 
 
