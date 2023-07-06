@@ -5,6 +5,12 @@ root=Tk()
 root.title("Shutdown App")
 root.geometry("400x580")
 
+def restarttime():
+    os.system("shutdown /r /t 30")
+
+def restart():
+    os.system("shutdown /r /t 1")
+
 # Restart Button
 restart_time_button = PhotoImage(file="E:\Projects\Repositories\Python\Python-Basics\Project 10 - Shutdown App\restart.jpg")
 first_botton = Button(root, image=restart_time_button, borderwidth=0, cursor="hand2", command=restarttime)
