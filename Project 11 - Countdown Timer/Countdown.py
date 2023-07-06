@@ -25,4 +25,19 @@ current_time = Label(root,font=("arial", 15, "bold"), text="", fg="#000",bg="#ff
 current_time.place(x=190, y=70)
 clock()
 
+
+# Timer
+hrs=StringVar()
+Entry(root,textvariable=hrs,width=2,font="arial 50").place(x=30, y=155)
+hrs.set("00")
+
+mins=StringVar()
+Entry(root,textvariable=mins,width=2,font="arial 50").place(x=150, y=155)
+mins.set("00")
+
+sec=StringVar()
+Entry(root,textvariable=sec,width=2,font="arial 50").place(x=270, y=155)
+sec.set("00")
+
+
 root.mainloop()
