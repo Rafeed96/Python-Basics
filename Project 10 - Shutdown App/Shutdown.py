@@ -20,6 +20,13 @@ restart_button = PhotoImage(file="E:\Projects\Repositories\Python\Python-Basics\
 third_botton = Button(root, image=restart_button, borderwidth=0, cursor="hand2")
 third_botton.place(x=10, y=200)
 
+# Shutdown Button
+shutdown_button = PhotoImage(file="E:\Projects\Repositories\Python\Python-Basics\Project 10 - Shutdown App\shutdown.jpg")
+fourth_botton = Button(root, image=shutdown_button, borderwidth=0, cursor="hand2")
+fourth_botton.place(x=200, y=200)
+
+
+
 
 
 root.mainloop()
