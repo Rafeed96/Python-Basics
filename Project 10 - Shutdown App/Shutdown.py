@@ -11,6 +11,12 @@ def restarttime():
 def restart():
     os.system("shutdown /r /t 1")
 
+def shutdown():
+    os.system("shutdown /s /t 1")
+
+def logout():
+    os.system("shutdown -1")
+
 # Restart Button
 restart_time_button = PhotoImage(file="E:\Projects\Repositories\Python\Python-Basics\Project 10 - Shutdown App\restart.jpg")
 first_botton = Button(root, image=restart_time_button, borderwidth=0, cursor="hand2", command=restarttime)
