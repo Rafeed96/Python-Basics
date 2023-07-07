@@ -44,6 +44,23 @@ Label(root,text="mins",font="arial 12", bg="#000", fg="#fff").place(x=225,y=200)
 Label(root,text="sec",font="arial 12", bg="#000", fg="#fff").place(x=345,y=200)
 
 
+def Timer():
+    times = int(hrs.get())*3600 +int(mins.get())*60 + int(sec.get())
+
+    while times > -1:
+        minute, second = (times//60, times %60)
+
+        hour = 0
+        if minute>60:
+            hour,minute=(minute//60,minute%60)
+
+        sec.set(second)
+        mins.set(minute)
+        hrs.set(hour)
+
+        root.update()
+        time.sleep(1)
+
 button = Button(root,text="Start",bg="#ea3548",fg="#fff",bd=0,width=20,height=2,font="arial 10 bold")
 button.pack(padx=5,pady=40,side=BOTTOM)
 
