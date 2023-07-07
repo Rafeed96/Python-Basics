@@ -67,8 +67,15 @@ def Timer():
             mins.set("00")
             hrs.set("00")
 
+        times -= 1
+
 button = Button(root,text="Start",bg="#ea3548",fg="#fff",bd=0,width=20,height=2,font="arial 10 bold")
 button.pack(padx=5,pady=40,side=BOTTOM)
+
+Image1 = PhotoImage(file="brush.png")
+button1 = Button(root,image=Image1, bg="#000", bd=0)
+button1.place(x=7,y=300)
+
 
 
 root.mainloop()
