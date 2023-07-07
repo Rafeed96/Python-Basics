@@ -24,5 +24,19 @@ top= PhotoImage(file="")
 top_image=Label(root,image=top,background="#f0f1f5")
 top_image.place(x=-10, y=-10)            
 
+# Bottom Box
+Label(root,width=72,height=18,bg="lightblue").pack(side=BOTTOM)
+
+# TWO Boxes
+box = PhotoImage(file="")
+Label(root,image=box).place(x=20,y=100)
+Label(root,image=box).place(x=240,y=100)
+
+# Scale
+scale = PhotoImage(file="")
+Label(root,image=scale).place(x=20,y=310)
+Label(root,image=box).place(x=240,y=100)
+
+
 
 root.mainloop()
