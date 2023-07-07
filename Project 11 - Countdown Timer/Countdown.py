@@ -72,7 +72,17 @@ def Timer():
 
 def brush():
     hrs.set("00")
-    mins.set("00")
+    mins.set("02")
+    sec.set("00")
+
+def face():
+    hrs.set("00")
+    mins.set("15")
+    sec.set("00")
+
+def eggs():
+    hrs.set("00")
+    mins.set("10")
     sec.set("00")
 
 
