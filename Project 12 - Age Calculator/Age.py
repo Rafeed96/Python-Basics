@@ -23,6 +23,16 @@ yearValue = StringVar()
 monthValue = StringVar()
 dayValue = StringVar()
 
-nameEn
+nameEntry=Entry(root,textvariable=nameValue,width=30,bd=3,font=20)
+nameEntry.place(x=300,y=250)
+
+yearEntry=Entry(root,textvariable=yearValue,width=30,bd=3,font=20)
+yearEntry.place(x=300,y=300)
+
+monthEntry=Entry(root,textvariable=monthValue,width=30,bd=3,font=20)
+monthEntry.place(x=300,y=350)
+
+dayEntry=Entry(root,textvariable=dayValue,width=30,bd=3,font=20)
+dayEntry.place(x=300,y=400)
 
 root.mainloop()
