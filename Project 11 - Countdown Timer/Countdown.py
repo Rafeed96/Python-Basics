@@ -61,6 +61,12 @@ def Timer():
         root.update()
         time.sleep(1)
 
+        if (times==0):
+            playsound("ringtone.wav")
+            sec.set("00")
+            mins.set("00")
+            hrs.set("00")
+
 button = Button(root,text="Start",bg="#ea3548",fg="#fff",bd=0,width=20,height=2,font="arial 10 bold")
 button.pack(padx=5,pady=40,side=BOTTOM)
 
