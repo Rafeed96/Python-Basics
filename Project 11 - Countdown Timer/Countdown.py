@@ -44,4 +44,8 @@ Label(root,text="mins",font="arial 12", bg="#000", fg="#fff").place(x=225,y=200)
 Label(root,text="sec",font="arial 12", bg="#000", fg="#fff").place(x=345,y=200)
 
 
+button = Button(root,text="Start",bg="#ea3548",fg="#fff",bd=0,width=20,height=2,font="arial 10 bold")
+button.pack(padx=5,pady=40,side=BOTTOM)
+
+
 root.mainloop()
