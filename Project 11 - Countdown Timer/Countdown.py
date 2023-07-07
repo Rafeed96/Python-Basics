@@ -76,6 +76,13 @@ Image1 = PhotoImage(file="brush.png")
 button1 = Button(root,image=Image1, bg="#000", bd=0)
 button1.place(x=7,y=300)
 
+Image2 = PhotoImage(file="face.png")
+button2 = Button(root,image=Image2, bg="#000", bd=0)
+button2.place(x=137,y=300)
+
+Image3 = PhotoImage(file="eggs.png")
+button3 = Button(root,image=Image3, bg="#000", bd=0)
+button3.place(x=267,y=300)
 
 
 root.mainloop()
