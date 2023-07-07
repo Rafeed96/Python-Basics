@@ -9,7 +9,7 @@ root.geometry("800x600")
 root.resizable(False,False)
 root.title("Age Calculator")
 
-photo=PhotoImage(file="AgeCalculator.png")
+photo=PhotoImage(file="Project 12 - Age Calculator\AgeCalculator.png")
 myimage=Label(image=photo)
 myimage.pack(padx=15,pady=15)
 
