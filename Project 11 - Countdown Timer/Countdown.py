@@ -69,19 +69,26 @@ def Timer():
 
         times -= 1
 
+
+def brush():
+    hrs.set("00")
+    mins.set("00")
+    sec.set("00")
+
+
 button = Button(root,text="Start",bg="#ea3548",fg="#fff",bd=0,width=20,height=2,font="arial 10 bold")
 button.pack(padx=5,pady=40,side=BOTTOM)
 
 Image1 = PhotoImage(file="brush.png")
-button1 = Button(root,image=Image1, bg="#000", bd=0)
+button1 = Button(root,image=Image1, bg="#000", bd=0, command=brush)
 button1.place(x=7,y=300)
 
 Image2 = PhotoImage(file="face.png")
-button2 = Button(root,image=Image2, bg="#000", bd=0)
+button2 = Button(root,image=Image2, bg="#000", bd=0, command=face)
 button2.place(x=137,y=300)
 
 Image3 = PhotoImage(file="eggs.png")
-button3 = Button(root,image=Image3, bg="#000", bd=0)
+button3 = Button(root,image=Image3, bg="#000", bd=0, command=eggs)
 button3.place(x=267,y=300)
 
 
