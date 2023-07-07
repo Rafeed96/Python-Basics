@@ -8,3 +8,10 @@ root=Tk()
 root.geometry("800x600")
 root.resizable(False,False)
 root.title("Age Calculator")
+
+photo=PhotoImage(file="AgeCalculator.png")
+myimage=Label(image=photo)
+myimage.pack(padx=15,pady=15)
+
+
+root.mainloop()
