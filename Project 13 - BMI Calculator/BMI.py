@@ -15,12 +15,12 @@ root.resizable(False,False)
 root.configure(bg="#f0f1f5")
 
 # icon
-image_icon=PhotoImage(file="")
+image_icon=PhotoImage(file="Project 13 - BMI Calculator\--bmi.jpg")
 root.iconphoto(False,image_icon)
 
 # Top
 
-top= PhotoImage(file="")
+top= PhotoImage(file="Project 13 - BMI Calculator\top.png")
 top_image=Label(root,image=top,background="#f0f1f5")
 top_image.place(x=-10, y=-10)            
 
@@ -28,12 +28,12 @@ top_image.place(x=-10, y=-10)
 Label(root,width=72,height=18,bg="lightblue").pack(side=BOTTOM)
 
 # TWO Boxes
-box = PhotoImage(file="")
+box = PhotoImage(file="Project 13 - BMI Calculator\box.png")
 Label(root,image=box).place(x=20,y=100)
 Label(root,image=box).place(x=240,y=100)
 
 # Scale
-scale = PhotoImage(file="")
+scale = PhotoImage(file="Project 13 - BMI Calculator\scale.png")
 Label(root,image=scale).place(x=20,y=310)
 Label(root,image=box).place(x=240,y=100)
 
