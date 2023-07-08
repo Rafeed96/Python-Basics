@@ -41,5 +41,12 @@ pause_button = PhotoImage(file="Project 15 - Music Player\pause.png")
 Button(root,image=pause_button,bg="#0f1a2b",bd=0).place(x=200,y=500)
 
 
+#music
+Menu=PhotoImage(file="")
+Label(root,image=Menu,bg="#0f1a2b").pack(padx=10,pady=50,side=RIGHT)
+
+music_frame = Frame(root,bd=2,relief=RIDGE)
+music_frame.place(x=330,y=350,width=560,height=250)
+
 
 root.mainloop()
