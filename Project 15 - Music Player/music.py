@@ -18,6 +18,12 @@ mixer.init()
 image_icon = PhotoImage(file="Project 15 - Music Player/logo.png")
 root.iconphoto(False,image_icon)
 
+Top=PhotoImage(file="Project 15 - Music Player\top1.jpg")
+Label(root,image=Top,bg="#0f1a2b").pack()
 
+
+#logo
+Logo=PhotoImage(file="Project 15 - Music Player/logo.png")
+Label(root,image=Logo,bg="#0f1a2b").place(x=65,y=115)
 
 root.mainloop()
