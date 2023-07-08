@@ -48,5 +48,13 @@ Label(root,image=Menu,bg="#0f1a2b").pack(padx=10,pady=50,side=RIGHT)
 music_frame = Frame(root,bd=2,relief=RIDGE)
 music_frame.place(x=330,y=350,width=560,height=250)
 
+Button(root,text="Open Folder",width=15,height=2,font=("arial",10,"bold"),fg="white",bg="#21b3de").place(x=330,y=300)
+
+scroll = Scrollbar(music_frame)
+playlist = Listbox(music_frame,width=100,font=("arial", 10), bg="#333333",fg="grey", selectbackground="lighblue", cursor="hand2", bd=0, yscrollcommand=scroll.set)
+
+scroll.config(command=playlist.yview)
+scroll.pack(side=RIGHT, fill=Y)
+playlist.pack(side=LEFT,fill=BOTH)
 
 root.mainloop()
