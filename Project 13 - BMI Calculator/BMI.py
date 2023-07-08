@@ -15,7 +15,7 @@ root.resizable(False,False)
 root.configure(bg="#f0f1f5")
 
 # icon
-image_icon=PhotoImage(file="Project 13 - BMI Calculator\--bmi.jpg")
+image_icon=PhotoImage(file="bMi.png")
 root.iconphoto(False,image_icon)
 
 # Top
