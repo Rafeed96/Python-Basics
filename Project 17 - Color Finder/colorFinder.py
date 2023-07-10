@@ -42,5 +42,17 @@ id5 = colors.create_rectangle((10,200,50,250), fill="#afb83b")
 hex1=Label(colors,text="#b8255f", fg="#000", font="arial 12 bold", bg="white")
 hex1.place(x=60,y=15)
 
+hex2=Label(colors,text="#db4035", fg="#000", font="arial 12 bold", bg="white")
+hex2.place(x=60,y=65)
+
+hex3=Label(colors,text="#ff9933", fg="#000", font="arial 12 bold", bg="white")
+hex3.place(x=60,y=115)
+
+hex4=Label(colors,text="#fad000", fg="#000", font="arial 12 bold", bg="white")
+hex4.place(x=60,y=165)
+
+hex5=Label(colors,text="#afb83b", fg="#000", font="arial 12 bold", bg="white")
+hex5.place(x=60,y=215)
+
 
 root.mainloop()
