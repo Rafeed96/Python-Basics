@@ -31,5 +31,10 @@ Label(frame,text="Color Finder", font="arial 25 bold", bg="white").place(x=100,y
 colors=Canvas(frame,bg="#fff",width=150,height=265,bd=0)
 colors.place(x=20,y=90)
 
+id1 = colors.create_rectangle((10,10,50,50), fill="#b8255f")
+
+hex1=Label(colors,text="#b8255f", fg="#000", font="arial 12 bold", bg="white")
+hex1.place(x=60,y=15)
+
 
 root.mainloop()
