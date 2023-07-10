@@ -22,4 +22,9 @@ Label(root,width=120,height=10,bg="#4272f9").pack()
 frame = Frame(root,width=700,height=370,bg="#fff")
 frame.place(x=50,y=50)
 
+logo=PhotoImage(file="")
+Label(frame,image=logo,bg="#fff").place(x=10,y=10)
+
+Label(frame,text="Color Finder", font="arial 25 bold", BufferError)
+
 root.mainloop()
