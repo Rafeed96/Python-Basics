@@ -25,6 +25,11 @@ frame.place(x=50,y=50)
 logo=PhotoImage(file="")
 Label(frame,image=logo,bg="#fff").place(x=10,y=10)
 
-Label(frame,text="Color Finder", font="arial 25 bold", BufferError)
+Label(frame,text="Color Finder", font="arial 25 bold", bg="white").place(x=100,y=20)
+
+#color
+colors=Canvas(frame,bg="#fff",width=150,height=265,bd=0)
+colors.place(x=20,y=90)
+
 
 root.mainloop()
