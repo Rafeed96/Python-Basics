@@ -27,11 +27,17 @@ Label(frame,image=logo,bg="#fff").place(x=10,y=10)
 
 Label(frame,text="Color Finder", font="arial 25 bold", bg="white").place(x=100,y=20)
 
-#color
+#color strip 1
 colors=Canvas(frame,bg="#fff",width=150,height=265,bd=0)
 colors.place(x=20,y=90)
 
 id1 = colors.create_rectangle((10,10,50,50), fill="#b8255f")
+id2 = colors.create_rectangle((10,50,50,100), fill="#db4035")
+id3 = colors.create_rectangle((10,100,50,150), fill="#ff9933")
+id4 = colors.create_rectangle((10,150,50,200), fill="#fad000")
+id5 = colors.create_rectangle((10,200,50,250), fill="#afb83b")
+
+
 
 hex1=Label(colors,text="#b8255f", fg="#000", font="arial 12 bold", bg="white")
 hex1.place(x=60,y=15)
