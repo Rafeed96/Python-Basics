@@ -25,6 +25,31 @@ Button(root, image=eraser, bg="#f2f3f5").place(x=30,y=400)
 colors=Canvas(root,bg="#ffffff", width=37, height=300, bd=0)
 colors.place(x=30,y=60)
 
+def display_pallete():
+    id = colors.create_rectangle((10,10,30,30),fill="black")
+    colors.tag_bind(id, 'Button-1', lambda x: show_color('black'))
+    
+    id = colors.create_rectangle((10,10,30,30),fill="black")
+    colors.tag_bind(id, 'Button-1', lambda x: show_color('black'))
+
+    id = colors.create_rectangle((10,10,30,30),fill="black")
+    colors.tag_bind(id, 'Button-1', lambda x: show_color('black'))
+
+    id = colors.create_rectangle((10,10,30,30),fill="black")
+    colors.tag_bind(id, 'Button-1', lambda x: show_color('black'))
+    
+    id = colors.create_rectangle((10,10,30,30),fill="black")
+    colors.tag_bind(id, 'Button-1', lambda x: show_color('black'))
+
+    id = colors.create_rectangle((10,10,30,30),fill="black")
+    colors.tag_bind(id, 'Button-1', lambda x: show_color('black'))
+
+    id = colors.create_rectangle((10,10,30,30),fill="black")
+    colors.tag_bind(id, 'Button-1', lambda x: show_color('black'))
+
+
+
+
 
 canvas = Canvas(root,width=930,height=500,background="white",cursor="hand2")
 canvas.place(x=100,y=10)
