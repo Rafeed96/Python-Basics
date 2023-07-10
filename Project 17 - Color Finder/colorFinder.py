@@ -12,4 +12,14 @@ root.geometry("800x470+100+100")
 root.configure(bg="#e4e8eb")
 root.resizable(False,False)
 
+#icon 
+#image_icon = PhotoImage(file="")
+#root.iconphoto(False,image_icon)
+
+Label(root,width=120,height=10,bg="#4272f9").pack()
+
+#frame
+frame = Frame(root,width=700,height=370,bg="#fff")
+frame.place(x=50,y=50)
+
 root.mainloop()
