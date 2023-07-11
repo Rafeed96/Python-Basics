@@ -38,8 +38,6 @@ def Findcolor():
     rgb9=palette[8]
     rgb10=palette[9]
 
-    print(rgb1)
-
     color1=f"#{rgb1[0]:02x}{rgb1[1]:02x}{rgb1[2]:02x}"
     color2=f"#{rgb2[0]:02x}{rgb2[1]:02x}{rgb2[2]:02x}"
     color3=f"#{rgb3[0]:02x}{rgb3[1]:02x}{rgb3[2]:02x}"
@@ -62,6 +60,17 @@ def Findcolor():
     colors2.itemconfig(id8, fill=color8)
     colors2.itemconfig(id9, fill=color9)
     colors2.itemconfig(id10, fill=color10)
+
+    hex1.config(text=color1)
+    hex2.config(text=color2)
+    hex3.config(text=color3)
+    hex4.config(text=color4)
+    hex5.config(text=color5)
+    hex6.config(text=color6)
+    hex7.config(text=color7)
+    hex8.config(text=color8)
+    hex9.config(text=color9)
+    hex10.config(text=color10)
 
 #icon 
 #image_icon = PhotoImage(file="")
@@ -106,9 +115,6 @@ hex5=Label(colors,text="#afb83b", fg="#000", font="arial 12 bold", bg="white")
 hex5.place(x=60,y=215)
 
 
-
-
-
 #color strip 1
 colors2=Canvas(frame,bg="#fff",width=150,height=265,bd=0)
 colors2.place(x=180,y=90)
@@ -118,7 +124,6 @@ id7 = colors2.create_rectangle((10,50,50,100), fill="#299438")
 id8 = colors2.create_rectangle((10,100,50,150), fill="#6accbc")
 id9 = colors2.create_rectangle((10,150,50,200), fill="#158fad")
 id10 = colors2.create_rectangle((10,200,50,250), fill="#14aaf5")
-
 
 
 hex6=Label(colors2,text="#7ecc49", fg="#000", font="arial 12 bold", bg="white")
@@ -149,6 +154,5 @@ lbl.place(x=0,y=0)
 
 Button(selectimage,text="Select Image",width=12,height=1,font="arial 14 bold",command=showimage).place(x=10,y=300)
 Button(selectimage,text="Find Colors",width=12,height=1,font="arial 14 bold",command=Findcolor).place(x=176,y=300)
-
 
 root.mainloop()
