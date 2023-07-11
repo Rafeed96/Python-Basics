@@ -12,6 +12,13 @@ root.geometry("800x470+100+100")
 root.configure(bg="#e4e8eb")
 root.resizable(False,False)
 
+
+def showimage():
+    filename=filedialog.askopenfilename(initialdir=os.getcwd(),title="Select Image File", filetypes=(("PNG file","*.png"),("JPG file","*.jpg"),("ALL file","*.txt")))
+
+    
+
+
 #icon 
 #image_icon = PhotoImage(file="")
 #root.iconphoto(False,image_icon)
@@ -95,5 +102,9 @@ f.place(x=10,y=10)
 
 lbl = Label(f,bg="black")
 lbl.place(x=0,y=0)
+
+Button(selectimage,text="Select Image",width=12,height=1,font="arial 14 bold",command=showimage).place(x=10,y=300)
+Button(selectimage,text="Find Colors",width=12,height=1,font="arial 14 bold").place(x=176,y=300)
+
 
 root.mainloop()
