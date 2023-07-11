@@ -16,7 +16,10 @@ root.resizable(False,False)
 def showimage():
     filename=filedialog.askopenfilename(initialdir=os.getcwd(),title="Select Image File", filetypes=(("PNG file","*.png"),("JPG file","*.jpg"),("ALL file","*.txt")))
 
-    
+    img=Image.open(filename)
+    img=ImageTk.PhotoImage(img)
+    lbl.configure(image=img,width=310,height=270)
+    lbl.image=img
 
 
 #icon 
