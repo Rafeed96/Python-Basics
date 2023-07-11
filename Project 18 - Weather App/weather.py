@@ -14,7 +14,7 @@ from PIL import Image, ImageTk
 
 root = Tk()
 root.title("Weather App")
-root.geometry("890x470+300+300")
+root.geometry("890x470+300+200")
 root.configure(bg="#57adff")
 root.resizable(False,False)
 
