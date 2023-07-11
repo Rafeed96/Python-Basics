@@ -21,6 +21,14 @@ def showimage():
     lbl.configure(image=img,width=310,height=270)
     lbl.image=img
 
+def Findcolor():
+
+    ct=ColorThief(filename)
+    palette = ct.get_palette(color_count=11)
+
+    
+
+
 
 #icon 
 #image_icon = PhotoImage(file="")
@@ -107,7 +115,7 @@ lbl = Label(f,bg="black")
 lbl.place(x=0,y=0)
 
 Button(selectimage,text="Select Image",width=12,height=1,font="arial 14 bold",command=showimage).place(x=10,y=300)
-Button(selectimage,text="Find Colors",width=12,height=1,font="arial 14 bold").place(x=176,y=300)
+Button(selectimage,text="Find Colors",width=12,height=1,font="arial 14 bold",command=Findcolor).place(x=176,y=300)
 
 
 root.mainloop()
