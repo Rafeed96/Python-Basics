@@ -14,6 +14,7 @@ root.resizable(False,False)
 
 
 def showimage():
+    global filename
     filename=filedialog.askopenfilename(initialdir=os.getcwd(),title="Select Image File", filetypes=(("PNG file","*.png"),("JPG file","*.jpg"),("ALL file","*.txt")))
 
     img=Image.open(filename)
@@ -26,8 +27,18 @@ def Findcolor():
     ct=ColorThief(filename)
     palette = ct.get_palette(color_count=11)
 
-    
+    rgb1=palette[0]
+    rgb2=palette[1]
+    rgb3=palette[2]
+    rgb4=palette[3]
+    rgb5=palette[4]
+    rgb6=palette[5]
+    rgb7=palette[6]
+    rgb8=palette[7]
+    rgb9=palette[8]
+    rgb10=palette[9]
 
+    print(rgb1)
 
 
 #icon 
