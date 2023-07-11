@@ -51,17 +51,17 @@ def Findcolor():
     color9=f"#{rgb9[0]:02x}{rgb9[1]:02x}{rgb9[2]:02x}"
     color10=f"#{rgb10[0]:02x}{rgb10[1]:02x}{rgb10[2]:02x}"
     
-    print(color1)
-    print(color2)
-    print(color3)
-    print(color4)
-    print(color5)
-    print(color6)    
-    print(color7)
-    print(color8)    
-    print(color9)
-    print(color10)
-    
+    colors.itemconfig(id1, fill=color1)
+    colors.itemconfig(id2, fill=color2)
+    colors.itemconfig(id3, fill=color3)
+    colors.itemconfig(id4, fill=color4)
+    colors.itemconfig(id5, fill=color5)
+        
+    colors2.itemconfig(id6, fill=color6)
+    colors2.itemconfig(id7, fill=color7)
+    colors2.itemconfig(id8, fill=color8)
+    colors2.itemconfig(id9, fill=color9)
+    colors2.itemconfig(id10, fill=color10)
 
 #icon 
 #image_icon = PhotoImage(file="")
