@@ -27,6 +27,13 @@ f.place(x=10,y=118,width=440,height=210)
 text1=Text(f,font="Roboto 20", bg="white", relief=GROOVE,wrap=WORD)
 text1.place(x=0,y=0,width=430,height=200)
 
+scrollbar1=Scrollbar(f)
+scrollbar1.pack(side="right", fill="y")
+
+scrollbar1.configure(command=text1.yview)
+text1.configure(yscrollcommand=scrollbar1.set)
+
+
 
 combo2=ttk.Combobox(root,values=languageV,font="Roboto 14", state="r")
 combo2.place(x=730,y=20)
