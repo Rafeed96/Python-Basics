@@ -10,6 +10,8 @@ root.title("Translator")
 root.geometry("1000x400")
 root.configure(bg="white")
 
+
+
 language=googletrans.LANGUAGES
 languageV = list(language.values())
 lang1 = language.keys()
