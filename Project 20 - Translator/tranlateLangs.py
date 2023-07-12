@@ -10,7 +10,10 @@ root.title("Translator")
 root.geometry("1000x400")
 root.configure(bg="white")
 
-
+#arrow
+arrow_image=PhotoImage(file="Project 20 - Translator\images.png")
+image_label=Label(root,image=arrow_image,width=90)
+image_label.place(x=455,y=50)
 
 language=googletrans.LANGUAGES
 languageV = list(language.values())
