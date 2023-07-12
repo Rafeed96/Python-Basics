@@ -31,7 +31,7 @@ combo1=ttk.Combobox(root,values=languageV,font="Roboto 14", state="r")
 combo1.place(x=110,y=20)
 combo1.set("English")
 
-label1 = Label(root,text="English",font="segeo 30 bold", bg="white", width=18,bd=5,relief=GROOVE)
+label1 = Label(root,text="Select Language",font="segeo 30 bold", bg="white", width=18,bd=5,relief=GROOVE)
 label1.place(x=10,y=50)
 
 f=Frame(root,bg="Black",bd=5)
@@ -67,6 +67,8 @@ scrollbar2.pack(side="right", fill="y")
 
 scrollbar2.configure(command=text2.yview)
 text2.configure(yscrollcommand=scrollbar2.set)
+
+label_change()
 
 root.mainloop()
 
