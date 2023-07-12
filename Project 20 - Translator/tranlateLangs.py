@@ -10,6 +10,14 @@ root.title("Translator")
 root.geometry("1000x400")
 root.configure(bg="white")
 
+def label_change():
+    c=combo1.get()
+    c1=combo2.get()
+    label1.configure(text=c)
+    label2.configure(text=c1)
+    root.after(1000,label_change)
+
+
 #arrow
 arrow_image=PhotoImage(file="Project 20 - Translator\images.png")
 image_label=Label(root,image=arrow_image,width=90)
