@@ -19,5 +19,9 @@ combo1.place(x=110,y=20)
 combo1.set("English")
 
 
+combo2=ttk.Combobox(root,values=languageV,font="Roboto 14", state="r")
+combo2.place(x=730,y=20)
+combo2.set("Select Language")
+
 root.mainloop()
 
