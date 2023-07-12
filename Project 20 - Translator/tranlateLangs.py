@@ -29,6 +29,12 @@ def translate_now():
             for imj in language.items():
                 if(j==c3):
                     lan_=i
+            
+            words=words.translate(from_lang=lan,to=str(lan_))
+            text2.delete(1.0,END)
+            text2.insert(END,words)
+    except Exception as e:
+        messagebox.showerror("googletrans", "Please try again")
 
 
 #arrow
