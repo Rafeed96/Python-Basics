@@ -17,6 +17,19 @@ def label_change():
     label2.configure(text=c1)
     root.after(1000,label_change)
 
+def translate_now():
+    global language
+    try:
+        text_text1.get(1.0,END)
+        c2=combo1.get()
+        c3=combo2.get()
+        if(text_):
+            words=textblob.TextBlob(text_)
+            lan=words.detect_language()
+            for imj in language.items():
+                if(j==c3):
+                    lan_=i
+
 
 #arrow
 arrow_image=PhotoImage(file="Project 20 - Translator\images.png")
