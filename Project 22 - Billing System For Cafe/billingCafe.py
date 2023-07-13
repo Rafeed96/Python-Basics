@@ -53,7 +53,20 @@ lbl_naan.grid(row=7,column=0)
 
 #Entry
 entry_parata=Entry(f1,font=("aria",20,"bold"),textvariable=parata,bd=6,width=8,bg="lightgreen")
+entry_daal=Entry(f1,font=("aria",20,"bold"),textvariable=daal,bd=6,width=8,bg="lightgreen")
+entry_aloo=Entry(f1,font=("aria",20,"bold"),textvariable=aloo,bd=6,width=8,bg="lightgreen")
+entry_shingara=Entry(f1,font=("aria",20,"bold"),textvariable=shingara,bd=6,width=8,bg="lightgreen")
+entry_samosa=Entry(f1,font=("aria",20,"bold"),textvariable=samosa,bd=6,width=8,bg="lightgreen")
+entry_tea=Entry(f1,font=("aria",20,"bold"),textvariable=tea,bd=6,width=8,bg="lightgreen")
+entry_naan=Entry(f1,font=("aria",20,"bold"),textvariable=naan,bd=6,width=8,bg="lightgreen")
+
 entry_parata.grid(row=1,column=1)
+entry_daal.grid(row=2,column=1)
+entry_aloo.grid(row=3,column=1)
+entry_shingara.grid(row=4,column=1)
+entry_samosa.grid(row=5,column=1)
+entry_tea.grid(row=6,column=1)
+entry_naan.grid(row=7,column=1)
 
 
 root.mainloop()
