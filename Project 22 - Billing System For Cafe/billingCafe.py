@@ -46,6 +46,17 @@ def Total():
     c6 = 10*i6
     c7 = 15*i7
 
+    lbl_total=Label(f2,font=("aria",20,"bold"),text="Total",width=16,fg="lightyellow", bg="black")
+    lbl_total.place(x=0,y=50)
+
+    entry_total=Entry(f2,font=("aria",20,"bold"),textvariable=Total_bill,bd=6,width=15,bg="lightgreen")
+    entry_total.place(x=20,y=100)
+
+    totalcost = c1+c2+c3+c4+c5+c6+c7
+    string_bill="TK.",str('%.2f' %totalcost)
+    Total_bill.set(string_bill)
+
+
 Label(text="Billing System", bg="black", fg="white",font=("calibri",33),width=300,height=2).pack()
 
 # Menu Items with Prices
@@ -61,6 +72,10 @@ Label(f,font=("Lucida Calligraphy",15,"bold"),text="Shingara          ... Tk 10/
 Label(f,font=("Lucida Calligraphy",15,"bold"),text="Samosa            ... Tk 10/pc",fg="black", bg="gray").place(x=10,y=200)
 Label(f,font=("Lucida Calligraphy",15,"bold"),text="Tea                   ... Tk 10/pc",fg="black", bg="gray").place(x=10,y=230)
 Label(f,font=("Lucida Calligraphy",15,"bold"),text="Naan Roti          ... Tk 15/pc",fg="black", bg="gray").place(x=10,y=260)
+
+# Billing of items
+f2=Frame(root,bg="lightyellow",highlightbackground="black", highlightthickness=1,width=300,height=370)
+f2.place(x=690,y=118)
 
 # Enter Items
 f1 =Frame(root,bd=5,height=370,width=300,relief=RAISED)
