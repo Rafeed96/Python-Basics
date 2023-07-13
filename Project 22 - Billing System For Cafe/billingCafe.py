@@ -15,6 +15,31 @@ def Reset():
     entry_naan.delete(0,END)
 
 
+def Total():
+    try: i1=int(parata.get())
+    except: i1=0
+    
+    try: i2=int(daal.get())
+    except: i2=0
+
+    try: i3=int(aloo.get())
+    except: i3=0
+
+    try: i4=int(shingara.get())
+    except: i4=0
+
+    try: i5=int(samosa.get())
+    except: i5=0
+
+    try: i6=int(tea.get())
+    except: i6=0
+
+    try: i7=int(naan.get())
+    except: i7=0
+
+
+    #
+
 Label(text="Billing System", bg="black", fg="white",font=("calibri",33),width=300,height=2).pack()
 
 # Menu Items with Prices
@@ -83,5 +108,8 @@ entry_naan.grid(row=7,column=1)
 
 btn_reset=Button(f1,bd=5,fg="black",bg="lightblue",font=("ariel",16,"bold"), width=10,text="Reset",command=Reset)
 btn_reset.grid(row=8,column=0)
+
+btn_total=Button(f1,bd=5,fg="black",bg="lightblue",font=("ariel",16,"bold"), width=10,text="Total",command=Total)
+btn_total.grid(row=8,column=1)
 
 root.mainloop()
