@@ -5,6 +5,16 @@ root.title("Billing System")
 root.geometry("1000x500")
 root.resizable(False,False)
 
+def Reset():
+    entry_parata.delete(0,END)
+    entry_daal.delete(0,END)
+    entry_aloo.delete(0,END)
+    entry_shingara.delete(0,END)
+    entry_samosa.delete(0,END)
+    entry_tea.delete(0,END)
+    entry_naan.delete(0,END)
+
+
 Label(text="Billing System", bg="black", fg="white",font=("calibri",33),width=300,height=2).pack()
 
 # Menu Items with Prices
@@ -68,5 +78,10 @@ entry_samosa.grid(row=5,column=1)
 entry_tea.grid(row=6,column=1)
 entry_naan.grid(row=7,column=1)
 
+
+#Button
+
+btn_reset=Button(f1,bd=5,fg="black",bg="lightblue",font=("ariel",16,"bold"), width=10,text="Reset",command=Reset)
+btn_reset.grid(row=8,column=0)
 
 root.mainloop()
