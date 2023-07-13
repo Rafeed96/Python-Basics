@@ -37,8 +37,14 @@ def Total():
     try: i7=int(naan.get())
     except: i7=0
 
-
-    #
+    # Update cost of each item based on item frequency 
+    c1 = 60*i1
+    c2 = 5*i2
+    c3 = 5*i3
+    c4 = 10*i4
+    c5 = 10*i5
+    c6 = 10*i6
+    c7 = 15*i7
 
 Label(text="Billing System", bg="black", fg="white",font=("calibri",33),width=300,height=2).pack()
 
@@ -55,7 +61,6 @@ Label(f,font=("Lucida Calligraphy",15,"bold"),text="Shingara          ... Tk 10/
 Label(f,font=("Lucida Calligraphy",15,"bold"),text="Samosa            ... Tk 10/pc",fg="black", bg="gray").place(x=10,y=200)
 Label(f,font=("Lucida Calligraphy",15,"bold"),text="Tea                   ... Tk 10/pc",fg="black", bg="gray").place(x=10,y=230)
 Label(f,font=("Lucida Calligraphy",15,"bold"),text="Naan Roti          ... Tk 15/pc",fg="black", bg="gray").place(x=10,y=260)
-
 
 # Enter Items
 f1 =Frame(root,bd=5,height=370,width=300,relief=RAISED)
