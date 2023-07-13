@@ -22,4 +22,17 @@ Label(f,font=("Lucida Calligraphy",15,"bold"),text="Tea                   ... Tk
 Label(f,font=("Lucida Calligraphy",15,"bold"),text="Naan Roti          ... Tk 15/pc",fg="black", bg="gray").place(x=10,y=260)
 
 
+# Enter Items
+f1 =Frame(root,bd=5,height=370,width=300,relief=RAISED)
+f1.pack()
+
+parata=StringVar()
+daal=StringVar()
+aloo=StringVar()
+shingara=StringVar()
+samosa=StringVar()
+tea=StringVar()
+naan=StringVar()
+
+
 root.mainloop()
