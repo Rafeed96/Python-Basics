@@ -45,12 +45,14 @@ def Total():
     c5 = 10*i5
     c6 = 10*i6
     c7 = 15*i7
+    
 
     lbl_total=Label(f2,font=("aria",20,"bold"),text="Total",width=16,fg="lightyellow", bg="black")
     lbl_total.place(x=0,y=50)
 
     entry_total=Entry(f2,font=("aria",20,"bold"),textvariable=Total_bill,bd=6,width=15,bg="lightgreen")
     entry_total.place(x=20,y=100)
+
 
     totalcost = c1+c2+c3+c4+c5+c6+c7
     string_bill="TK.",str('%.2f' %totalcost)
@@ -88,6 +90,7 @@ shingara=StringVar()
 samosa=StringVar()
 tea=StringVar()
 naan=StringVar()
+Total_bill=StringVar()
 
 #Label
 lbl_parata=Label(f1,font=("aria",20,"bold"),text="Parata",width=12,fg="black")
