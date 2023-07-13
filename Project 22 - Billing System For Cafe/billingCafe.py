@@ -34,5 +34,13 @@ samosa=StringVar()
 tea=StringVar()
 naan=StringVar()
 
+#Label
+lbl_parata=Label(f1,font=("aria",20,"bold"),text="Parata",width=12,fg="black")
+lbl_parata.grid(row=1,column=0)
+
+#Entry
+entry_parata=Entry(f1,font=("aria",20,"bold"),textvariable=parata,bd=6,width=8,bg="lightgreen")
+entry_parata.grid(row=1,column=1)
+
 
 root.mainloop()
