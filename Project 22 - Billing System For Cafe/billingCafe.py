@@ -36,7 +36,20 @@ naan=StringVar()
 
 #Label
 lbl_parata=Label(f1,font=("aria",20,"bold"),text="Parata",width=12,fg="black")
+lbl_daal=Label(f1,font=("aria",20,"bold"),text="Daal",width=12,fg="black")
+lbl_aloo=Label(f1,font=("aria",20,"bold"),text="Aloo",width=12,fg="black")
+lbl_shingara=Label(f1,font=("aria",20,"bold"),text="Shingara",width=12,fg="black")
+lbl_samosa=Label(f1,font=("aria",20,"bold"),text="Samosa",width=12,fg="black")
+lbl_tea=Label(f1,font=("aria",20,"bold"),text="Tea",width=12,fg="black")
+lbl_naan=Label(f1,font=("aria",20,"bold"),text="Naan",width=12,fg="black")
+
 lbl_parata.grid(row=1,column=0)
+lbl_daal.grid(row=2,column=0)
+lbl_aloo.grid(row=3,column=0)
+lbl_shingara.grid(row=4,column=0)
+lbl_samosa.grid(row=5,column=0)
+lbl_tea.grid(row=6,column=0)
+lbl_naan.grid(row=7,column=0)
 
 #Entry
 entry_parata=Entry(f1,font=("aria",20,"bold"),textvariable=parata,bd=6,width=8,bg="lightgreen")
