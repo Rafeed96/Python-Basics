@@ -23,7 +23,6 @@ root.title("Student Registration")
 root.geometry("1250x7700+210+100")
 root.configure(bg="#06283D")
 
-
 file=pathlib.Path("Student_Data.xlsx")
 
 if file.exists():
@@ -45,5 +44,9 @@ else:
     sheet["L1"]="Mother's Occupation"
 
     file.save("Student_Data.xlsx")
+
+# Upper Frame
+Label(root,text="Email: homepc@gmail.com",width=10,height=3,bg="#f0687c",anchor='e').pack(side=TOP,fill=X)
+Label(root,text="STUDENT REGISTRATION",width=10,height=2,bg="#c36464",fg="#fff",font="arial 20 bold").pack(side=TOP,fill=X)
 
 root.mainloop()
