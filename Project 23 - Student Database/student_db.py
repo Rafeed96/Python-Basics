@@ -14,10 +14,13 @@ import openpyxl, xlrd
 from openpyxl import Workbook
 import pathlib
 
+backG = "#06283D"
+framBG = "#EDEDED"
+framFG = "#06283D"
 
 root=Tk()
 root.title("Student Registration")
 root.geometry("1250x7700+210+100")
-root.configure()
+root.configure(bg="#06283D")
 
 root.mainloop()
