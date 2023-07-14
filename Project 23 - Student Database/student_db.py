@@ -53,7 +53,7 @@ Label(root,text="STUDENT REGISTRATION",width=10,height=2,bg="#c36464",fg="#fff",
 # Search box
 Search=StringVar()
 Entry(root,textvariable=Search,width=15,bd=2,font="arial 20").place(x=820,y=70)
-imageicon3=PhotoImage(file="Image/search.png")
+imageicon3=PhotoImage(file="Project 23 - Student Database\images (1).png")
 
 
 root.mainloop()
