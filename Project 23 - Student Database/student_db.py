@@ -13,3 +13,11 @@ from tkinter.ttk import Combobox
 import openpyxl, xlrd
 from openpyxl import Workbook
 import pathlib
+
+
+root=Tk()
+root.title("Student Registration")
+root.geometry("1250x7700+210+100")
+root.configure()
+
+root.mainloop()
