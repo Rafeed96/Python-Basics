@@ -95,12 +95,20 @@ Label(obj,text="Class:",font="arial 13", bg=framBG,fg=framFG).place(x=500,y=50)
 Label(obj,text="Religion:",font="arial 13", bg=framBG,fg=framFG).place(x=500,y=100)
 Label(obj,text="Skills:",font="arial 13", bg=framBG,fg=framFG).place(x=500,y=150)
 
+Name=StringVar()
+name_entry = Entry(obj,textvariable=Name,width=20,font="arial 10")
+name_entry.place(x=160,y=50)
 
+radio = IntVar()
+R1 = Radiobutton(obj,text="Male", variable=radio, value=1,bg=framBG,fg=framFG)
+R1.place(x=150,y=150)
 
 #Parents Details
 
 obj2=LabelFrame(root,text="Parent's Details",font=20,bd=2,width=900,bg=framBG,height=220,relief=GROOVE)
 obj2.place(x=30,y=470)
+
+
 
 
 root.mainloop()
