@@ -123,6 +123,16 @@ R1.place(x=150,y=150)
 R2 = Radiobutton(obj,text="Female", variable=radio, value=2,bg=framBG,fg=framFG,command=selection)
 R2.place(x=200,y=150)
 
+Religion=StringVar()
+religion_entry = Entry(obj,textvariable=Religion,width=20,font="arial 10")
+religion_entry .place(x=630,y=100)
+
+Skill=StringVar()
+skill_entry = Entry(obj,textvariable=Skill,width=20,font="arial 10")
+skill_entry.place(x=630,y=150)
+
+
+
 #Parents Details
 
 obj2=LabelFrame(root,text="Parent's Details",font=20,bd=2,width=900,bg=framBG,height=220,relief=GROOVE)
