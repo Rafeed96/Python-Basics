@@ -81,4 +81,15 @@ date_entry.place(x=550,y=150)
 
 Date.set(d1)
 
+#Student Details
+
+obj=LabelFrame(root,text="Student's Details",font=20,bd=2,width=900,bg=framBG,height=250,relief=GROOVE)
+obj.place(x=30,y=200)
+
+#Parents Details
+
+obj2=LabelFrame(root,text="Parent's Details",font=20,bd=2,width=900,bg=framBG,height=220,relief=GROOVE)
+obj2.place(x=30,y=470)
+
+
 root.mainloop()
