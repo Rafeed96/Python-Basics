@@ -50,6 +50,17 @@ else:
 def Exit():
     root.destroy()
 
+# Show Image
+
+def showImage():
+    filename=filedialog.askopenfilename(initialdir=os.getcwd(), title="Select Image File",filetypes=(("JPG File","*.jpg"),
+                                                                                                     ("PNG File","*.png"),
+                                                                                                     ("All Files","*.txt")))
+    img = (Image.open(filename))
+    resized_image = img.resize((190,190))
+    photo2 = ImageTk.PhotoImage(resized_image)
+    lbl.config(image=photo2)
+    lbl.image=photo2
 
 # Radio button for gender selection
 
