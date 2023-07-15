@@ -112,6 +112,10 @@ Name=StringVar()
 name_entry = Entry(obj,textvariable=Name,width=20,font="arial 10")
 name_entry.place(x=160,y=50)
 
+DateOB=StringVar()
+dob_entry = Entry(obj,textvariable=DateOB,width=20,font="arial 10")
+dob_entry.place(x=160,y=100)
+
 radio = IntVar()
 R1 = Radiobutton(obj,text="Male", variable=radio, value=1,bg=framBG,fg=framFG,command=selection)
 R1.place(x=150,y=150)
