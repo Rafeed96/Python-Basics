@@ -160,4 +160,16 @@ M_Occupation = StringVar()
 mo_entry=Entry(obj2,textvariable=M_Occupation,width=20,font="arial 10")
 mo_entry.place(x=630,y=100)
 
+
+#Photo Image
+f=Frame(root,bd=3,bg="black",width=200,height=200,relief=GROOVE)
+f.place(x=1000,y=150)
+
+img = PhotoImage(file="")
+lbl=Label(f,bg="black",image=img)
+lbl.place(x=0,y=0)
+
+
+
+
 root.mainloop()
