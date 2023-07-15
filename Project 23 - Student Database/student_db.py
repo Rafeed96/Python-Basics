@@ -62,4 +62,14 @@ Update_button=Button(root,image=imageicon4,bg="#c36464")
 Update_button.place(x=110,y=64)
 
 
+#Registration and Date
+Label(root,text="Registration No.:", font="arial 13", fg=framBG,bg=backG,).place(x=30,y=150)
+Label(root,text="Date:", font="arial 13", fg=framBG,bg=backG,).place(x=500,y=150)
+
+Registration=StringVar()
+Date=StringVar()
+
+reg_entry = Entry(root,textvariable=Registration,width=15,font="arial 10")
+reg_entry.place(x=160,y=150)
+
 root.mainloop()
