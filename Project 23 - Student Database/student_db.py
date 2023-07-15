@@ -169,6 +169,16 @@ img = PhotoImage(file="Project 23 - Student Database\image_profile.png")
 lbl=Label(f,bg="black",image=img)
 lbl.place(x=0,y=0)
 
+# Buttons
+
+Button(root,text="Upload",width=19,height=2,font="arial 12 bold",bg="yellow").place(x=1000,y=370)
+
+Button(root,text="Save",width=19,height=2,font="arial 12 bold",bg="lightgreen").place(x=1000,y=450)
+
+Button(root,text="Reset",width=19,height=2,font="arial 12 bold",bg="lightblue").place(x=1000,y=530)
+
+Button(root,text="Exit",width=19,height=2,font="arial 12 bold",bg="red").place(x=1000,y=610)
+
 
 
 
