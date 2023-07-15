@@ -53,6 +53,8 @@ def Exit():
 # Show Image
 
 def showImage():
+    global filename
+    global img
     filename=filedialog.askopenfilename(initialdir=os.getcwd(), title="Select Image File",filetypes=(("JPG File","*.jpg"),
                                                                                                      ("PNG File","*.png"),
                                                                                                      ("All Files","*.txt")))
@@ -61,6 +63,23 @@ def showImage():
     photo2 = ImageTk.PhotoImage(resized_image)
     lbl.config(image=photo2)
     lbl.image=photo2
+
+# Registration Number
+
+def registration_no():
+    file=openpyxl.load_workbook("Student_Data.xlsx")
+    sheet=file.active
+    row=sheet.max_row
+
+    max_row_value=sheet.cell(row=row,column=1).value
+
+    try:
+        Registration.set(max_row_value+1)
+    except:
+        Registration.set("1")
+
+
+
 
 # Radio button for gender selection
 
@@ -100,6 +119,7 @@ reg_entry = Entry(root,textvariable=Registration,width=15,font="arial 10")
 reg_entry.place(x=160,y=150)
 
 #Registration no.
+registration_no()
 
 today = date.today()
 d1 = today.strftime("%m/%d/%Y")
