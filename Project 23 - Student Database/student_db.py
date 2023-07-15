@@ -131,7 +131,8 @@ Skill=StringVar()
 skill_entry = Entry(obj,textvariable=Skill,width=20,font="arial 10")
 skill_entry.place(x=630,y=150)
 
-
+Student_Class = Combobox(obj,values=['1','2','3','4','5','6','7','8','9','10','11','12'],font="Roboto 10",width=17,state="r")
+Student_Class.place(x=630,y=50)
 
 #Parents Details
 
