@@ -149,4 +149,15 @@ F_Occupation = StringVar()
 fo_entry=Entry(obj2,textvariable=F_Occupation,width=20,font="arial 10")
 fo_entry.place(x=160,y=100)
 
+Label(obj2,text="Mother's Name:",font="arial 13", bg=framBG,fg=framFG).place(x=500,y=50)
+Label(obj2,text="Occupation:",font="arial 13", bg=framBG,fg=framFG).place(x=500,y=100)
+
+M_Name = StringVar()
+m_entry=Entry(obj2,textvariable=M_Name,width=20,font="arial 10")
+m_entry.place(x=630,y=50)
+
+M_Occupation = StringVar()
+mo_entry=Entry(obj2,textvariable=M_Occupation,width=20,font="arial 10")
+mo_entry.place(x=630,y=100)
+
 root.mainloop()
