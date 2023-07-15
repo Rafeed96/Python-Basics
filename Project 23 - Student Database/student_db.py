@@ -72,4 +72,13 @@ Date=StringVar()
 reg_entry = Entry(root,textvariable=Registration,width=15,font="arial 10")
 reg_entry.place(x=160,y=150)
 
+#Registration no.
+
+today = date.today()
+d1 = today.strftime("%m/%d/%Y")
+date_entry = Entry(root,textvariable=Date,width=15,font="arial 10")
+date_entry.place(x=550,y=150)
+
+Date.set(d1)
+
 root.mainloop()
