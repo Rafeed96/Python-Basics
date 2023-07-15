@@ -52,10 +52,8 @@ def selection():
     value = radio.get()
     if value==1:
         gender = "Male"
-        print(gender)
     else:
         gender = "Female"
-        print(gender)
 
 
 # Upper Frame
@@ -133,13 +131,22 @@ skill_entry.place(x=630,y=150)
 
 Student_Class = Combobox(obj,values=['1','2','3','4','5','6','7','8','9','10','11','12'],font="Roboto 10",width=17,state="r")
 Student_Class.place(x=630,y=50)
+Student_Class.set("Select Class")
 
 #Parents Details
 
 obj2=LabelFrame(root,text="Parent's Details",font=20,bd=2,width=900,bg=framBG,height=220,relief=GROOVE)
 obj2.place(x=30,y=470)
 
+Label(obj2,text="Father's Name:",font="arial 13", bg=framBG,fg=framFG).place(x=30,y=50)
+Label(obj2,text="Occupation:",font="arial 13", bg=framBG,fg=framFG).place(x=30,y=100)
 
+F_Name = StringVar()
+f_entry=Entry(obj2,textvariable=F_Name,width=20,font="arial 10")
+f_entry.place(x=160,y=50)
 
+F_Occupation = StringVar()
+fo_entry=Entry(obj2,textvariable=F_Occupation,width=20,font="arial 10")
+fo_entry.place(x=160,y=100)
 
 root.mainloop()
