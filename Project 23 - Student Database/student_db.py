@@ -165,7 +165,7 @@ mo_entry.place(x=630,y=100)
 f=Frame(root,bd=3,bg="black",width=200,height=200,relief=GROOVE)
 f.place(x=1000,y=150)
 
-img = PhotoImage(file="")
+img = PhotoImage(file="Project 23 - Student Database\image_profile.png")
 lbl=Label(f,bg="black",image=img)
 lbl.place(x=0,y=0)
 
