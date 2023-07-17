@@ -82,6 +82,7 @@ def registration_no():
 # Reset Button
 
 def Clear():
+    global img
     Name.set('')
     DateOB.set('')
     Religion.set('')
@@ -92,6 +93,15 @@ def Clear():
     M_Occupation.set('')
     Student_Class.set("Select Class")
 
+    registration_no()
+
+    saveButton.config(state = "normal")
+
+    img1=PhotoImage(file="Project 23 - Student Database\image_profile.png")
+    lbl.config(image=img1)
+    lbl.image=img1
+
+    img=""
 
 # Radio button for gender selection
 
