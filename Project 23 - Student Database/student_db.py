@@ -79,6 +79,18 @@ def registration_no():
         Registration.set("1")
 
 
+# Reset Button
+
+def Clear():
+    Name.set('')
+    DateOB.set('')
+    Religion.set('')
+    Skill.set('')
+    F_Name.set('')
+    M_Name.set('')
+    F_Occupation.set('')
+    M_Occupation.set('')
+    Student_Class.set("Select Class")
 
 
 # Radio button for gender selection
@@ -211,7 +223,7 @@ Button(root,text="Upload",width=19,height=2,font="arial 12 bold",bg="lightblue",
 
 saveButton = Button(root,text="Save",width=19,height=2,font="arial 12 bold",bg="lightgreen").place(x=1000,y=450)
 
-Button(root,text="Reset",width=19,height=2,font="arial 12 bold",bg="pink").place(x=1000,y=530)
+Button(root,text="Reset",width=19,height=2,font="arial 12 bold",bg="pink",command=Clear).place(x=1000,y=530)
 
 Button(root,text="Exit",width=19,height=2,font="arial 12 bold",bg="gray",command=Exit).place(x=1000,y=610)
 
