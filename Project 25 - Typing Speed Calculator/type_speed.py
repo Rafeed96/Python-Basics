@@ -5,3 +5,6 @@ test = ["A paragraph is a self-contained unit of discourse in writing dealing wi
         "My name is Will I Am", "Welcome to python tech"]
 
 
+test1 = r.choice(test)
+
+print(test1)
