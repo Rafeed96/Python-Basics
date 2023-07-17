@@ -98,7 +98,7 @@ def Clear():
     saveButton.config(state = "normal")
 
     img1=PhotoImage(file="Project 23 - Student Database\image_profile.png")
-    lbl.config(image=img1)
+    lbl.configure(image=img1)
     lbl.image=img1
 
     img=""
