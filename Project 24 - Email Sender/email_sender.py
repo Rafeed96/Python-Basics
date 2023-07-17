@@ -9,6 +9,9 @@ body="I love myself, my computer and python"
 message = "subject:{}\n\n{}".format(subject,body)
 
 
-emaiList = ["rafeed.ibrahim@gmail.com","ribrahim173095@bscse.uiu.ac.bd"]
+emailList = ["rafeed.ibrahim@gmail.com","ribrahim173095@bscse.uiu.ac.bd"]
 
-ob.sendmail("")
+ob.sendmail("raicobd@gmail.com",emailList,message)
+
+print("send mail")
+ob.quit()
