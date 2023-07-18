@@ -24,6 +24,15 @@ def signin():
 
         screen.mainloop()
 
+    elif username!= "admin" and password != "1234":
+        messagebox.showerror("Invalid", "Invalid username and password")
+
+
+    elif password != "1234":
+        messagebox.showerror("Invalid", "Invalid password")
+
+        
+
 
 # Image for form
 img = PhotoImage("Project 27 - Login Form\vecteezy_cloud-computing-modern-flat-concept-for-web-banner-design_5879539.jpg")
