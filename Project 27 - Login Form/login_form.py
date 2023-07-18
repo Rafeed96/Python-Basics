@@ -20,9 +20,21 @@ heading =Label(frame,text="Sign In",fg="#57a1f8",bg="white",font=("Microsoft Yah
 heading.place(x=100,y=5)
 
 # User id login
+
+def on_enter(e):
+    user.delete(0, "end")
+
+def on_leave(e):
+    name=user.get()
+    if name=="":
+        user.insert(0, "Username")
+
 user = Entry(frame,width=25,fg="black",border=0,bg="white",font=("Microsoft Yahei UI Light",11))
 user.place(x=30,y=80)
 user.insert(0,"Username")
+user.bind("<FocusIn>",on_enter)
+user.bind("<FocusOut>",on_leave)
+
 
 Frame(frame,width=295,height=2,bg="black").place(x=25,y=107)
 
@@ -41,7 +53,8 @@ Button(frame,width=39,pady=7,text="Sign In", bg="#57a1f8", fg="white", border=0)
 label=Label(frame,text="Don't have an account?",fg="black",bg="white",font=("Microsoft YaHei UI Light",9))
 label.place(x=75,y=270)
 
-
+sign_up=Button(frame,width=6,text="Sign Up", border=0,bg="white",cursor="hand2",fg="#57a1f8")
+sign_up.place(x=215,y=270)
 
 
 
