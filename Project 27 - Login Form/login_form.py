@@ -8,6 +8,16 @@ root.geometry("925x500+300+200")
 root.configure(bg="#fff")
 root.resizable(False,False)
 
+# Sign in Button 
+
+def signin():
+    username=user.get()
+    password=code.get()
+
+    if username=="admin" and password=="1234":
+        print("Hello Admin")
+
+
 # Image for form
 img = PhotoImage("Project 27 - Login Form\vecteezy_cloud-computing-modern-flat-concept-for-web-banner-design_5879539.jpg")
 Label(root,image=img,bg="red").place(x=50,y=50)
@@ -58,7 +68,7 @@ Frame(frame,width=295,height=2,bg="black").place(x=25,y=177)
 
 
 # Button
-Button(frame,width=39,pady=7,text="Sign In", bg="#57a1f8", fg="white", border=0).place(x=35,y=204)
+Button(frame,width=39,pady=7,text="Sign In", bg="#57a1f8", fg="white", border=0,command=signin).place(x=35,y=204)
 
 # New Account
 label=Label(frame,text="Don't have an account?",fg="black",bg="white",font=("Microsoft YaHei UI Light",9))
