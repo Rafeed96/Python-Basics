@@ -35,8 +35,14 @@ Frame(frame,width=295,height=2,bg="black").place(x=25,y=177)
 
 
 # Button
-
 Button(frame,width=39,pady=7,text="Sign In", bg="#57a1f8", fg="white", border=0).place(x=35,y=204)
+
+# New Account
+label=Label(frame,text="Don't have an account?",fg="black",bg="white",font=("Microsoft YaHei UI Light",9))
+label.place(x=75,y=270)
+
+
+
 
 
 root.mainloop()
