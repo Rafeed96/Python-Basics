@@ -21,5 +21,16 @@ user = Entry(frame,width=25,fg="black",border=0,bg="white",font=("Microsoft Yahe
 user.place(x=30,y=80)
 user.insert(0,"Username")
 
+Frame(frame,width=295,height=2,bg="black").place(x=25,y=107)
+
+
+code = Entry(frame,width=25,fg="black",border=0,bg="white",font=("Microsoft Yahei UI Light",11))
+code.place(x=30,y=150)
+code.insert(0,"Password")
+
+Frame(frame,width=295,height=2,bg="black").place(x=25,y=177)
+
+
+
 
 root.mainloop()
