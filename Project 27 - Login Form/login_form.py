@@ -31,7 +31,8 @@ def signin():
     elif password != "1234":
         messagebox.showerror("Invalid", "Invalid password")
 
-        
+    elif username!= "admin":
+        messagebox.showerror("Invalid", "Invalid username")
 
 
 # Image for form
