@@ -10,5 +10,4 @@ root.resizable(False,False)
 
 
 
-
 root.mainloop()
