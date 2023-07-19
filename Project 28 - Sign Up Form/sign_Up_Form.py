@@ -16,11 +16,11 @@ def signup():
     password = code.get()
     confirm_password = confirm_code.get()
 
-    if password == confirm_code:
+    if password == confirm_password:
         try:
             file=open('datasheet.txt','r+')
             d=file.read()
-            r.ast.literal_eval(d)
+            r=ast.literal_eval(d)
 
             dict2={username:password}
             r.update(dict2)
@@ -31,6 +31,14 @@ def signup():
             w=file.write(str(r))
 
             messagebox.showinfo("Signup","Sucessfully signed up")
+        except:
+            file=open('datasheet.txt','w')
+            pp = str({"Username":"password"})
+            file.write(pp)
+            file.close()
+
+    else:
+        messagebox.showinfo("Invalid","Both password should match")
 
 
 img = PhotoImage(file='Project 28 - Sign Up Form\login.png')
