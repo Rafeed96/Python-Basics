@@ -19,4 +19,13 @@ frame.place(x=480,y=50)
 heading =Label(frame,text="Sign In",fg="#57a1f8",bg="white",font=("Microsoft Yahei UI Light",23,"bold"))
 heading.place(x=100,y=5)
 
+
+# User
+
+user = Entry(frame,width=25,fg="black",border=0,bg="white",font=("Microsoft Yahei UI light", 11))
+user.place(x=30,y=80)
+user.insert(0,"Username")
+
+Frame(frame,width=295,height=2,bg="black").place(x=25,y=107)
+
 window.mainloop()
