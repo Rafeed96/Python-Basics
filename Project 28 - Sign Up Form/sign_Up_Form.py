@@ -35,4 +35,20 @@ user.bind("<FocusOut>",on_leave)
 
 Frame(frame,width=295,height=2,bg="black").place(x=25,y=107)
 
+# Password
+def on_enter(e):
+    code.delete(0, "end")
+def on_leave(e):
+    if code.get()=="":
+        code.insert(0, "Password")
+
+code = Entry(frame,width=25,fg="black",border=0,bg="white",font=("Microsoft Yahei UI light", 11))
+code.place(x=30,y=150)
+code.insert(0,"Password")
+code.bind("<FocusIn>",on_enter)
+code.bind("<FocusOut>",on_leave)
+
+Frame(frame,width=295,height=2,bg="black").place(x=25,y=177)
+
+
 window.mainloop()
