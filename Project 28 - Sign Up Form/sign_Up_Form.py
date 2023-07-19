@@ -18,7 +18,7 @@ def signup():
 
     if password == confirm_password:
         try:
-            file=open('datasheet.txt','r+')
+            file=open('Project 28 - Sign Up Form\datasheet.txt','r+')
             d=file.read()
             r=ast.literal_eval(d)
 
@@ -27,12 +27,12 @@ def signup():
             file.truncate(0)
             file.close()
 
-            file=open('datasheet.txt','w')
+            file=open('Project 28 - Sign Up Form\datasheet.txt','w')
             w=file.write(str(r))
 
             messagebox.showinfo("Signup","Sucessfully signed up")
         except:
-            file=open('datasheet.txt','w')
+            file=open('Project 28 - Sign Up Form\datasheet.txt','w')
             pp = str({"Username":"password"})
             file.write(pp)
             file.close()
