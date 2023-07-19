@@ -10,6 +10,29 @@ window.geometry("925x500+300+200")
 window.configure(bg="#fff")
 window.resizable(False,False)
 
+
+def signup():
+    username = user.get()
+    password = code.get()
+    confirm_password = confirm_code.get()
+
+    if password == confirm_code:
+        try:
+            file=open('datasheet.txt','r+')
+            d=file.read()
+            r.ast.literal_eval(d)
+
+            dict2={username:password}
+            r.update(dict2)
+            file.truncate(0)
+            file.close()
+
+            file=open('datasheet.txt','w')
+            w=file.write(str(r))
+
+            messagebox.showinfo("Signup","Sucessfully signed up")
+
+
 img = PhotoImage(file='Project 28 - Sign Up Form\login.png')
 Label(window,image=img,border=0,bg="white").place(x=50,y=90)
 
@@ -69,13 +92,11 @@ Frame(frame,width=295,height=2,bg="black").place(x=25,y=247)
 
 # Button
 
-Button(frame,width=39,pady=7,text="Sign Up",bg="#57a1f8",fg="white",border=0).place(x=35,y=280)
+Button(frame,width=39,pady=7,text="Sign Up",bg="#57a1f8",fg="white",border=0,command=signup).place(x=35,y=280)
 label=Label(frame,text="I have an account",fg="black", bg="white",font=("Microsoft Yahei UI Light", 9))
 label.place(x=90,y=340)
 
 signin = Button(frame,width=6,text="Sign in",border=0,bg="white",cursor="hand2",fg="#57a1f8")
 signin.place(x=200,y=340)
-
-
 
 window.mainloop()
