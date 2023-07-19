@@ -67,4 +67,8 @@ confirm_code.bind("<FocusOut>",on_leave)
 Frame(frame,width=295,height=2,bg="black").place(x=25,y=247)
 
 
+# Button
+
+Button(frame,width=39,pady=7,text="Sign Up",bg="#57a1f8",fg="white",border=0).place(x=35,y=280)
+
 window.mainloop()
