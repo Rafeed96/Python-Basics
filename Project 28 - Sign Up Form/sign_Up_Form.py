@@ -51,4 +51,20 @@ code.bind("<FocusOut>",on_leave)
 Frame(frame,width=295,height=2,bg="black").place(x=25,y=177)
 
 
+# Password Confirmation
+def on_enter(e):
+    confirm_code.delete(0, "end")
+def on_leave(e):
+    if confirm_code.get()=="":
+        confirm_code.insert(0, "Confirm Password")
+
+confirm_code = Entry(frame,width=25,fg="black",border=0,bg="white",font=("Microsoft Yahei UI light", 11))
+confirm_code.place(x=30,y=220)
+confirm_code.insert(0,"Confirm Password")
+confirm_code.bind("<FocusIn>",on_enter)
+confirm_code.bind("<FocusOut>",on_leave)
+
+Frame(frame,width=295,height=2,bg="black").place(x=25,y=247)
+
+
 window.mainloop()
