@@ -22,7 +22,8 @@ app_img = Image.open("Project 30 - Image to Pencil Sketch\imagePencil.png")
 app_img = app_img.resize((50,50))
 app_img =ImageTk.PhotoImage(app_img)
 
-app_logo = Label(window,image=app_img,text="Image to Pencil")
+app_logo = Label(window,image=app_img,text="Image to Pencil", width=300, compound=LEFT, relief=RAISED, anchor=NW, font=("System 15 bold"), bg=co0, fg=co1)
+app_logo.place(x=0, y=0)
 
 
 window.mainloop()
