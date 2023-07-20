@@ -18,11 +18,17 @@ window.resizable(width=False,height=False)
 
 global original_img, l_img, img
 
+original_img = ['']
+
 def choose_img():
     global original_img, l_img, img 
 
     img = fd.askopenfilename()
+    original_img.append(img)
 
+    img = Image.open(img)
+    img = img.resize((110,200))
+    
 
 
 style = ttk.Style(window)
