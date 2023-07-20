@@ -29,4 +29,7 @@ l_options = Label(window, text="Setting-----------------------------------------
 l_options.place(x=10, y=260)
 
 
+scale = Scale(window, from_=0, to=255, length=120, bg=co0, fg="red", orient=HORIZONTAL)
+scale.place(x=10, y=300)
+
 window.mainloop()
