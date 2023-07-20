@@ -3,6 +3,7 @@ from tkinter import *
 from tkinter import Tk, ttk
 from PIL import Image, ImageTk
 from tkinter import filedialog as fd
+import cv2
 
 # Black and white colours 
 
@@ -33,6 +34,9 @@ def choose_img():
     l_img = Label(window, image= img, bg=co0, fg=co1)
     l_img.place(x=60, y=60)
     
+
+def convert_img():
+    global original_img, l_img, img 
 
 
 style = ttk.Style(window)
