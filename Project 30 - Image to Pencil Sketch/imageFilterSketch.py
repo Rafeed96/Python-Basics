@@ -35,4 +35,7 @@ scale.place(x=10, y=300)
 b_choose = Button(window, text="Choose img", width=15, overrelief=RIDGE, font=("Ivy 10"), bg=co2, fg=co1)
 b_choose.place(x=147, y=287)
 
+b_save = Button(window, text="Save img", width=15, overrelief=RIDGE, font=("Ivy 10"), bg=co2, fg=co1)
+b_save.place(x=147, y=317)
+
 window.mainloop()
