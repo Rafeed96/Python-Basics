@@ -32,4 +32,7 @@ l_options.place(x=10, y=260)
 scale = Scale(window, from_=0, to=255, length=120, bg=co0, fg="red", orient=HORIZONTAL)
 scale.place(x=10, y=300)
 
+b_choose = Button(window, text="Choose img", width=15, overrelief=RIDGE, font=("Ivy 10"), bg=co2, fg=co1)
+b_choose.place(x=147, y=287)
+
 window.mainloop()
