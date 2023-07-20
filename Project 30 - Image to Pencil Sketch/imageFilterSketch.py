@@ -28,6 +28,10 @@ def choose_img():
 
     img = Image.open(img)
     img = img.resize((110,200))
+    img = ImageTk.PhotoImage(img)
+
+    l_img = Label(window, image= img, bg=co0, fg=co1)
+    l_img.place(x=60, y=60)
     
 
 
