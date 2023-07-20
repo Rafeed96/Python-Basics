@@ -2,6 +2,7 @@
 from tkinter import *
 from tkinter import Tk, ttk
 from PIL import Image, ImageTk
+from tkinter import filedialog as fd
 
 # Black and white colours 
 
@@ -14,6 +15,15 @@ window.title("Sketch")
 window.geometry("300x356")
 window.config(bg=co0)
 window.resizable(width=False,height=False)
+
+global original_img, l_img, img
+
+def choose_img():
+    global original_img, l_img, img 
+
+    img = fd.askopenfilename()
+
+
 
 style = ttk.Style(window)
 style.theme_use("clam")
