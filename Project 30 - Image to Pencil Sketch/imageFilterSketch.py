@@ -25,5 +25,8 @@ app_img =ImageTk.PhotoImage(app_img)
 app_logo = Label(window,image=app_img,text="Image to Pencil", width=300, compound=LEFT, relief=RAISED, anchor=NW, font=("System 15 bold"), bg=co0, fg=co1)
 app_logo.place(x=0, y=0)
 
+l_options = Label(window, text="Setting----------------------------------------------------------".upper(), anchor=NW, font=("Verdana 7 bold"), bg=co0, fg=co1)
+l_options.place(x=10, y=260)
+
 
 window.mainloop()
